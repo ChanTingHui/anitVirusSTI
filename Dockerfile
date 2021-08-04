@@ -18,5 +18,11 @@ RUN apt-get update && \
     rm -rf /var/cache/* && \
     freshclam && \
     maldet -u -d
+
+# export volumes (uncomment if you do not mount these volumes at runtime or via docker-compose)
+VOLUME /data/av/queue
+VOLUME /data/av/ok
+VOLUME /data/av/nok
+
   
 ENTRYPOINT ["/usr/local/entrypoint.sh"]
