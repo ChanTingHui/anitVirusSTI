@@ -1,3 +1,2 @@
 # anitVirusSTI
-# TingHuiKonekEye
-#Docker antivirus
+
